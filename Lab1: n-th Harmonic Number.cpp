@@ -1,4 +1,4 @@
-// harmonic.cc -- Sample C++ program to be debugged with DDD
+// harmonic.cc
 //
 // This program prompts the user for an integer n, and then
 // computes and prints the nth harmonic number, defined as:
