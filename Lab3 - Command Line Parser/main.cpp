@@ -397,7 +397,6 @@ void createCommand(stringstream & lineStream)
              << y_loc << " " << x_sz << " " << y_sz << endl;
         shapeCount++;
     }
-    
     return;
 }
 
@@ -492,8 +491,7 @@ void drawCommand(stringstream & lineStream)
         arrayLocationOfShape = returnArrayPosition(argument);
         cout << "Drew " << argument << endl;
         shapesArray[arrayLocationOfShape]->draw();
-    }
-    
+    } 
 }
 
 //Logic Implementation for the delete Command
@@ -535,21 +533,3 @@ void deleteCommand(stringstream & lineStream)
         cout << "Deleted shape " << argument << endl;
     }
 }
-
-/*
-if(!lineStream.eof())
-    {
-        while (peekValue == 32)
-        {
-            lineStream >> lookAhead;
-            peekValue = lineStream.peek();
-            if (lookAhead != NULL)
-            {
-                cout << "Error: too many arguments" << endl;
-                return true;
-            }
-        }
-    }
-   
-    return false;
-}*/
